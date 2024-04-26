@@ -1,0 +1,38 @@
+include: package:solid_lints/analysis_options.yaml
+
+analyzer:
+  exclude:
+    # Build
+    - "build/**"
+    # Tests
+    - "test/**.mocks.dart"
+    - ".test_coverage.dart"
+    - "coverage/**"
+    # Assets
+    - "assets/**"
+    # Generated
+    - "lib/src/core/localization/generated/**"
+    - "lib/src/core/constants/pubspec.yaml.g.dart"
+    - "lib/src/core/model/generated/**"
+    - "**.g.dart"
+    - "**.gql.dart"
+    - "**.freezed.dart"
+    - "**.config.dart"
+    - "**.mocks.dart"
+    - "**.gen.dart"
+    - "**.pb.dart"
+    - "**.pbenum.dart"
+    - "**.pbjson.dart"
+    # Flutter Version Manager
+    - ".fvm/**"
+    # Tools
+    #- "tool/**"
+    - "scripts/**"
+    - ".dart_tool/**"
+    # Platform
+    - "ios/**"
+    - "android/**"
+    - "web/**"
+    - "macos/**"
+    - "windows/**"
+    - "linux/**"
